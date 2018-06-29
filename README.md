@@ -12,6 +12,8 @@ Reproducing How To Train an "Object Detection Classifier Using TensorFlow 1.5 (G
 
 
 ## installing LabelImg
+ Using
+  https://mlnotesblog.wordpress.com/2017/12/16/how-to-install-labelimg-in-ubuntu-16-04
 
 ```bash
   git clone https://github.com/tzutalin/labelImg
@@ -23,4 +25,6 @@ original website:
 https://github.com/tzutalin/labelImg
 
 
+Best practiced for splitting data for training, deve and testing. 
 
+https://cs230-stanford.github.io/train-dev-test-split.html
