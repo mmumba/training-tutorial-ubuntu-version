@@ -1,11 +1,29 @@
 # training-tutorial-ubuntu-version
-Reproducing How To Train an "Object Detection Classifier Using TensorFlow 1.5 (GPU) on Windows 10" on ubuntu notes and observations.
+Reproducing How To Train an "Object Detection Classifier Using TensorFlow-GPU 1.5 (GPU) on Windows 10" on ubuntu notes and observations.
 
+(NOTE: Test out docker version of Tensorflow setup:https://www.tensorflow.org/install/ )
 
-## Step 1: Clone repository
+## Step 1: Install Tensorflow-GPU
+
+###Step 1.a: Clone repository
 ```bash
 git clone https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git
 ```
+
+### Step 1.b: Install upgrade tensorflow-gpu
+ ```bash
+    pip install --upgrade tensorflow-gpu
+ ```
+OUTPUT:
+```
+Successfully installed :
+	* keras-applications-1.0.6 
+	* keras-preprocessing-1.0.5
+	* protobuf-3.6.1 
+	* tensorboard-1.11.0
+	* tensorflow-gpu-1.11.0
+```
+
 
 
 ## Setting the python path for conda in Ubuntu
