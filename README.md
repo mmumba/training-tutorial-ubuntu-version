@@ -5,12 +5,12 @@ Reproducing How To Train an "Object Detection Classifier Using TensorFlow-GPU 1.
 
 ## Step 1: Install Tensorflow-GPU
 
-### Step 1.a: Clone repository
+### Step 1a: Clone repository
 ```bash
 git clone https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git
 ```
 
-### Step 1.b: Install upgrade tensorflow-gpu
+### Step 1b: Install upgrade tensorflow-gpu
  ```bash
     pip install --upgrade tensorflow-gpu
  ```
@@ -23,8 +23,29 @@ Successfully installed :
 	* tensorboard-1.11.0
 	* tensorflow-gpu-1.11.0
 ```
+### Step 1c: Install CUDA v9.0 and cuDNN v.7.0
 
+If already installed, check CUDA version
 
+```bash
+   nvcc --version
+```
+OUTPUT:
+```
+Cuda compilation tools, release 9.0, V9.0.176
+```
+
+check cuDNN version
+
+```bash
+   cat /usr/include/x86_64-linux-gnu/cudnn_v*.h | grep CUDNN_MAJOR -A 2
+```
+OUTPUT:
+```
+#define CUDNN_MAJOR 7
+#define CUDNN_MINOR 0
+#define CUDNN_PATCHLEVEL 3
+```
 
 ## Setting the python path for conda in Ubuntu
 
