@@ -3,7 +3,7 @@ Reproducing How To Train an "Object Detection Classifier Using TensorFlow-GPU 1.
 
 (NOTE: Test out docker version of Tensorflow setup:https://www.tensorflow.org/install/ )
 
-## Step 1: Install Tensorflow-GPU
+## Step 1: Install Tensorflow-GPU and Conda python 3.6
 
 ### Step 1a: Clone repository
 ```bash
@@ -46,6 +46,14 @@ OUTPUT:
 #define CUDNN_MINOR 0
 #define CUDNN_PATCHLEVEL 3
 ```
+
+## Step 1d: Install and upgrade Anaconda python 3.6
+
+```bash
+    conda install python=3.6
+```
+
+
 
 ## Setting the python path for conda in Ubuntu
 
