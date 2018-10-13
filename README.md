@@ -1,8 +1,10 @@
 # training-tutorial-ubuntu-version
 Reproducing How To Train an "Object Detection Classifier Using TensorFlow 1.5 (GPU) on Windows 10" on ubuntu notes and observations.
 
-```
-https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+
+## Step 1: Clone repository
+```bash
+git clone https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git
 ```
 
 
