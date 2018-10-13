@@ -5,7 +5,7 @@ Reproducing How To Train an "Object Detection Classifier Using TensorFlow-GPU 1.
 
 ## Step 1: Install Tensorflow-GPU
 
-###Step 1.a: Clone repository
+### Step 1.a: Clone repository
 ```bash
 git clone https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git
 ```
