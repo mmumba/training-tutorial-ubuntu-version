@@ -101,6 +101,86 @@ Clone original tutorial git repository into "object_detection" directory and cop
 ```
 
 
+### 2e. Set up Conda virtual Environment
+ 
+ 
+create virtual environments for python 3.5 (oringal) and python 3.6 latest (incase latest has any issues)
+
+```bash
+   conda create -n tensorflow1_p35 pip python=3.5
+   conda create -n tensorflow1_p36 pip python=3.6
+```
+
+Activate tensorflow1_p35
+
+```bash
+   conda activate tensorflow1_p35
+```
+
+upgrade pip
+
+```bash
+   pip install --upgrade pip
+```
+
+Install tensorflow-gpu in environment
+
+```bash
+   pip install --ignore-installed --upgrade tensorflow-gpu
+```
+OUTPUT:
+```
+Successfully installed
+   * absl-py-0.5.0 
+   * astor-0.7.1 
+   * gast-0.2.0 
+   * grpcio-1.15.0
+   * h5py-2.8.0 
+   * keras-applications-1.0.6
+   * keras-preprocessing-1.0.5 
+   * markdown-3.0.1 
+   * numpy-1.15.2 
+   * protobuf-3.6.1 
+   * setuptools-40.2.0
+   * six-1.11.0 
+   * tensorboard-1.11.0
+   * tensorflow-gpu-1.11.0
+   * termcolor-1.1.0 
+   * werkzeug-0.14.1 
+   * wheel-0.32.1
+```
+Install rest of required packages
+
+```bash
+  conda install -c anaconda protobuf
+```
+OUTPUT:
+New packages Installed:
+```
+   libprotobuf:     3.6.0-hdbcaa40_0     anaconda
+   protobuf:        3.6.0-py35hf484d3e_0 anaconda
+   six:             1.11.0-py35_1        anaconda
+```
+
+Install rest
+```bash
+   pip install pillow
+   pip install lxml
+   pip install Cython
+   pip install jupyter
+   pip install matplotlib
+   pip install pandas
+   pip install opencv-python
+```
+Installed Versions:
+```
+	pillow 5.3.0
+	lxml-4.2.5
+	Cython-0.28.5
+	cycler-0.10.0 kiwisolver-1.0.1 matplotlib-3.0.0 pyparsing-2.2.2
+	opencv-python-3.4.3.18
+	opencv-python-3.4.3.18
+```
 ```bash 
    export PYTHONPATH=/home/sink/obj-detect-ws/tensorflow1/models:/home/sink/obj-detect-ws/tensorflow1/models/research:/home/sink/obj-detect-ws/tensorflow1/models/research/slim
 ```
