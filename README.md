@@ -55,7 +55,31 @@ OUTPUT:
 
 
 
-## Setting the python path for conda in Ubuntu
+## 2. Setup Tensorflow Directory and conda virtual environment
+
+### 2a
+
+
+Create working directory and clone Tensorflow object detection repository into it:
+use original Feb 5 git branch to use working version of git used by windows tutorial.
+(may use current master if no issues arise)
+
+
+```bash
+	mkdir tensorflow1 ; cd tensorflow1
+```
+
+got to:
+https://github.com/tensorflow/models/tree/079d67d9a0b3407e8d074a200780f3835413ef99
+```
+download zip and extract to tensorflow1 directory and rename models-079d67d9a0b3407e8d074a200780f3835413ef99 direcotry to models
+
+```bash
+   unzip models-079d67d9a0b3407e8d074a200780f3835413ef99.zip 
+   mv models-079d67d9a0b3407e8d074a200780f3835413ef99 models
+```
+
+
 
 ```bash 
    export PYTHONPATH=/home/sink/obj-detect-ws/tensorflow1/models:/home/sink/obj-detect-ws/tensorflow1/models/research:/home/sink/obj-detect-ws/tensorflow1/models/research/slim
