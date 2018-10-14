@@ -57,27 +57,52 @@ OUTPUT:
 
 ## 2. Setup Tensorflow Directory and conda virtual environment
 
-### 2a
+### 2a. Setup working directory
 
-
-Create working directory and clone Tensorflow object detection repository into it:
-use original Feb 5 git branch to use working version of git used by windows tutorial.
-(may use current master if no issues arise)
-
+Create working directory  
 
 ```bash
 	mkdir tensorflow1 ; cd tensorflow1
 ```
 
+### 2b. Clone tensorflow models git repository.
+
+Use original Feb 5 git branch to use working version of git used by windows tutorial.
+(may use current master if no issues arise)
 got to:
+
 https://github.com/tensorflow/models/tree/079d67d9a0b3407e8d074a200780f3835413ef99
-```
+
 download zip and extract to tensorflow1 directory and rename models-079d67d9a0b3407e8d074a200780f3835413ef99 direcotry to models
 
 ```bash
    unzip models-079d67d9a0b3407e8d074a200780f3835413ef99.zip 
    mv models-079d67d9a0b3407e8d074a200780f3835413ef99 models
 ```
+
+### 2c. Download Faster-RCNN model
+
+Download and unzip model into  "../tensorflow1/models/research/object_detection/" folder.
+
+```bash
+   cd ../tensorflow1/models/research/object_detection/
+   wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+   tar -xvf faster_rcnn_inception_v2_coco_2018_01_28.tar.gz 
+```
+### 2d. Clone TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+
+
+Clone original tutorial git repository into "object_detection" directory.
+This will overwrite it's contents.
+
+```bash
+   cd ../tensorflow1/models/research/object_detection/
+   git clone https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git
+```
+
+
+
+
 
 
 
