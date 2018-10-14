@@ -92,18 +92,13 @@ Download and unzip model into  "../tensorflow1/models/research/object_detection/
 ### 2d. Clone TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
 
 
-Clone original tutorial git repository into "object_detection" directory.
-This will overwrite it's contents.
+Clone original tutorial git repository into "object_detection" directory and copy all the contents into the ../object_detection directory. This will overwrite it's contents.
 
 ```bash
    cd ../tensorflow1/models/research/object_detection/
    git clone https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10.git
+   cp -r  TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/* .
 ```
-
-
-
-
-
 
 
 ```bash 
